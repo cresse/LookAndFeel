@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tcss450.uw.edu.lookandfeel.AnimationsActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        android:hint="SPIN"
+        android:gravity="top"
+        style="@style/uw_button"
+        android:layout_margin="12dp"
+        android:onClick="animateSpin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move"
+        android:hint="MOVE"
+        android:gravity="top"
+        style="@style/uw_button"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/spin"
+        android:layout_toEndOf="@+id/spin"
+        android:layout_margin="12dp"
+        android:onClick="animateMove"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fade"
+        android:hint="FADE"
+        android:gravity="top"
+        style="@style/uw_button"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/move"
+        android:layout_toEndOf="@+id/move"
+        android:layout_margin="12dp"
+        android:onClick="animateFade"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/animate_me"
+        android:text="UWT"
+        android:gravity="center"
+        android:background="@color/uwPurple"
+        android:textColor="@color/uwGold"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="animateCheckpoint" />
+</RelativeLayout>
